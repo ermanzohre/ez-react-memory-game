@@ -1,0 +1,19 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 40vw;
+    text-align: center;
+    box-shadow: 6px 6px 6px gray;
+    background: white;
+  }
