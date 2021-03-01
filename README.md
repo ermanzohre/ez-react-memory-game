@@ -2,6 +2,23 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Installation
+
+Use the node package manager to install the dependencies for application. 
+
+```bash
+npm install
+```
+
+## Usage
+
+In order to run both applications from the parent folder you can use the command below.
+
+```bash
+npm start
+```
+
+
 ## Available Scripts
 
 In the project directory, you can run:
