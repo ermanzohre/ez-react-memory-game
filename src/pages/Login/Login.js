@@ -10,6 +10,7 @@ function Login() {
   const history = useHistory();
   const dispatch = useDispatch();
 
+  //synthetic event
   const handleChange = (e) => {
     name = e.target.value;
   };
