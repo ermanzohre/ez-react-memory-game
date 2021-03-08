@@ -8,12 +8,6 @@ const ScoreBoard = () => {
 
   const players = useSelector((state) => state.players);
 
-  // const players = [
-  //   {name: 'erman', score: 10},
-  //   {name: 'harun', score: 20},
-  //   {name: 'gkg', score: 30},
-  // ];
-
   const sortedPlayers = players.sort((a, b) => a.score - b.score);
 
   const handleClick = (e) => {
