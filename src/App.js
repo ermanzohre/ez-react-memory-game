@@ -7,7 +7,7 @@ import ScoreBoard from "./pages/ScoreBoard/ScoreBoard";
 import backImg from "./assets/images/back.png";
 import chip from "./assets/images/chip.png";
 import a from "./assets/images/a.png";
-import betbull from "./assets/images/betbull.png";
+import go from "./assets/images/go.png";
 import casino from "./assets/images/casino.png";
 import flush from "./assets/images/flush.png";
 import poker from "./assets/images/poker.png";
@@ -48,7 +48,7 @@ export default App;
 
 function buildCards() {
     let id = 0;
-    const images = [chip, a, betbull, casino, flush, poker, rulet, wynn];
+    const images = [chip, a, go, casino, flush, poker, rulet, wynn];
     const cards = images.reduce((result, item, index) => {
         const getCard = () => ({
             id: id++,
