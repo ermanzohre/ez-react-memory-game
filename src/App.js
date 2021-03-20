@@ -18,6 +18,7 @@ import { useSelector } from "react-redux";
 let cards = [];
 
 function App() {
+    
     const players = useSelector((state) => state.players);
 
     useEffect(() => {
@@ -47,8 +48,11 @@ export default App;
 
 
 function buildCards() {
+
     let id = 0;
+
     const images = [chip, a, go, casino, flush, poker, rulet, wynn];
+
     const cards = images.reduce((result, item, index) => {
         const getCard = () => ({
             id: id++,
@@ -59,11 +63,14 @@ function buildCards() {
         });
         return [...result, getCard(), getCard()];
     }, []);
+
     return suffle(cards);
 }
 
 function suffle(arr) {
+
     let len = arr.length;
+
     for (let i = 0; i < len; i++) {
         let randomIdx = Math.floor(Math.random() * len);
         let copyCurrent = { ...arr[i] };
@@ -71,5 +78,6 @@ function suffle(arr) {
         arr[i] = copyRandom;
         arr[randomIdx] = copyCurrent;
     }
+
     return arr;
 }
