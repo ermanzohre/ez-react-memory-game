@@ -4,14 +4,22 @@ import store from '../store';
 //   return {type: CHANGE_NAME, payload};
 // }
 export function changeName(payload) {
+
   const player = store.getState().players;
+
   return {
-    type: CHANGE_NAME, 
-    payload: [...player, {name: payload}]
+    type: CHANGE_NAME,
+    payload: [...player, {name: payload}],
   };
+
 }
+
 export function changeScore(payload) {
+
   const player = store.getState().players;
+
   player[player.length - 1].score = payload;
+
   return {type: CHANGE_NAME, payload: player};
+  
 }
