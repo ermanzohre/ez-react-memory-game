@@ -4,6 +4,7 @@ import {useHistory} from 'react-router-dom';
 import './ScoreBoard.css';
 
 const ScoreBoard = () => {
+
   const history = useHistory();
 
   const players = useSelector((state) => state.players);
@@ -13,6 +14,7 @@ const ScoreBoard = () => {
   const handleClick = (e) => {
     history.push('/');
   };
+  
 
   return (
     <div className='end-game'>
