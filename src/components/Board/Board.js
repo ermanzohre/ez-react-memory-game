@@ -18,8 +18,11 @@ const Board = (props) => {
   const dispatch = useDispatch();
 
   const onCardClick = (card) => () => {
+
     score++;
+
     if (checkersFull(checkers) || cardAlreadyInCheckers(checkers, card)) return;
+    
     const newCheckers = [...checkers, card];
 
     setCheckers(newCheckers);
